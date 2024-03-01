@@ -11,6 +11,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
+
+    <netty.version>4.1.107.Final</netty.version>
+<!--    <netty.version>4.1.108.Final-SNAPSHOT</netty.version>-->
   </properties>
 
   <dependencies>
@@ -22,36 +25,36 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-common</artifactId>
-      <version>4.1.107.Final</version>
+      <version>${netty.version}</version>
     </dependency>
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-handler</artifactId>
-      <version>4.1.107.Final</version>
+      <version>${netty.version}</version>
     </dependency>
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport</artifactId>
-      <version>4.1.107.Final</version>
+      <version>${netty.version}</version>
     </dependency>
 
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-resolver-dns</artifactId>
-      <version>4.1.107.Final</version>
+      <version>${netty.version}</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-resolver-dns-native-macos</artifactId>
-      <version>4.1.107.Final</version>
+      <version>${netty.version}</version>
       <scope>runtime</scope>
       <classifier>osx-aarch_64</classifier>
     </dependency>
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-resolver-dns-native-macos</artifactId>
-      <version>4.1.107.Final</version>
+      <version>${netty.version}</version>
       <scope>runtime</scope>
       <classifier>osx-x86_64</classifier>
     </dependency>
